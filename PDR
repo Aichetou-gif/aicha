@@ -1,0 +1,17 @@
+#!/bin/bash
+
+#awk '{print}' test-nb1-1.txt
+
+#awk '{print $1 "\t" $2}' test-nb1-1.tr
+
+for num_nodes in 13
+#16 17 18 20 25
+do
+  (sed -n '10 P' test-nd$num_nodes-1.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-2.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-3.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-4.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-5.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-6.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-7.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-8.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-9.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-10.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-11.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-12.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-13.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-14.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-15.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-16.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-17.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-18.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-19.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-20.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-21.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-22.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-23.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-24.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-25.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-26.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-27.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-28.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-29.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-30.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-31.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-32.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-33.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-34.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-35.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-36.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-37.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-38.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-39.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-40.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-41.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-42.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-43.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-44.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-45.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-46.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-47.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-48.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-49.txt | awk '{print $4}' && sed -n '10 P' test-nd$num_nodes-50.txt | awk '{print $4}')> pdr-sw100-nb$num_nodes.txt
+   #for run in 3 4 5 6
+   #do
+       #awk '{print $4}' ns-3-dev/test-nd$num_nodes-$run.txt >nb-pdr-$num_nodes.txt
+       #(sed -n '10 p' test-nd$num_nodes-$run.txt | awk '{print $3}') > nb-pdr-$num_nodes.txt
+
+   #done
+done
